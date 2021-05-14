@@ -1,4 +1,3 @@
-package Ecosistema;
 
 public class Oso extends Animal {
 
@@ -7,10 +6,5 @@ public class Oso extends Animal {
 		this.tipoAnimal = "Oso";
 		// TODO Auto-generated constructor stub
 	}
-
-	
-	
-	
-	
 
 }

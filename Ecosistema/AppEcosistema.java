@@ -1,19 +1,23 @@
-package Ecosistema;
 
 import java.util.Random;
 
 public class AppEcosistema {
 
+	// Code example
+	// int randomNum = minimum + rObj.nextInt((maximum - minimum) + 1);
+
 	public static void main(String[] args) {
-		Animal[] ecosistema = new Animal[10];
 		Random rObj = new Random();
+		int randomEco = 10 + rObj.nextInt((30 - 10) + 1);
+
+		Animal[] ecosistema = new Animal[randomEco];
 
 		// Generamos animales aleatorios en el arreglo
 		// Para tener nuestro ecosistema
 		// 1 = OSO 2 = PESCADO
 		for (int i = 0; i < ecosistema.length; i++) {
-			int randomAnimals = rObj.nextInt((3 - 1) + 1) + 1;
-			System.out.println(randomAnimals);
+			int randomAnimals = rObj.nextInt((2 - 1) + 1) + 1;
+			// System.out.println(randomAnimals);
 			if (randomAnimals == 1)
 				ecosistema[i] = new Oso();
 			if (randomAnimals == 2)
@@ -31,7 +35,8 @@ public class AppEcosistema {
 					}
 
 					if (ecosistema[i] instanceof Pez && ecosistema[i + 1] instanceof Pez) {
-						
+						// Aqui vamos a buscar una posicion aleatoria para insertar nuestro pez
+
 					}
 				}
 			}
