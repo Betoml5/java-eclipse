@@ -26,6 +26,11 @@ public class AppEcosistema {
 				if (ecosistema[i + 1] != null) {
 					// Movemos el Animal a la siguiente posicion del arreglo
 					if (ecosistema[i] instanceof Oso && ecosistema[i + 1] instanceof Pez) {
+						ecosistema[i + 1] = null;
+						ecosistema[i + 1] = ecosistema[i];
+					}
+
+					if (ecosistema[i] instanceof Pez && ecosistema[i + 1] instanceof Pez) {
 						
 					}
 				}
