@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class AppEcosistema {
@@ -24,6 +25,11 @@ public class AppEcosistema {
 				ecosistema[i] = new Pez();
 		}
 
+		salida = "";
+		for (int i = 0; i < ecosistema.length; i++) {
+			
+		}
+
 		// Hacemos movimientos
 		for (int i = 0; i < ecosistema.length - 1; i++) {
 			if (ecosistema[i] != null) {
@@ -36,10 +42,17 @@ public class AppEcosistema {
 
 					if (ecosistema[i] instanceof Pez && ecosistema[i + 1] instanceof Pez) {
 						// Aqui vamos a buscar una posicion aleatoria para insertar nuestro pez
-
+						int randomPos = 10 + rObj.nextInt((30 - 10) + 1);
+						while (ecosistema[randomPos] != null) {
+							randomPos = 10 + rObj.nextInt((30 - 10) + 1);
+						}
+						ecosistema[randomPos] = new Pez();
 					}
+
 				}
 			}
+
+			System.out.println("Posicion null");
 		}
 
 	}
