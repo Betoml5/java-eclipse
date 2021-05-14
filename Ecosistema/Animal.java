@@ -1,5 +1,7 @@
 package Ecosistema;
 
+import java.lang.reflect.Array;
+
 public class Animal {
 
     protected String tipoAnimal;
@@ -15,6 +17,10 @@ public class Animal {
 
     public String getTipoAnimal() {
         return this.tipoAnimal;
+    }
+
+    public void next(Animal[] array, int index, Animal value) {
+        Array.set(array, index, value);
     }
 
 }
