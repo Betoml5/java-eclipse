@@ -37,7 +37,7 @@ public class AppEcosistema {
 			}
 		}
 
-		JOptionPane.showMessageDialog(null, salida1, "Ecosistema antes", 1);
+		// JOptionPane.showMessageDialog(null, salida1, "Ecosistema antes", 1);
 
 		// Hacemos movimientos
 		for (int i = 0; i < ecosistema.length - 1; i++) {
@@ -92,9 +92,14 @@ public class AppEcosistema {
 			}
 		}
 
-		JOptionPane.showMessageDialog(null, salida2, "Ecosistema despues", 1);
+		// JOptionPane.showMessageDialog(null, salida2, "Ecosistema despues", 1);
 
-		JOptionPane.showMessageDialog(null, salida1 + "\n ========== \n" + salida2, "Dos ecosistemas", 1);
+		// JOptionPane.showMessageDialog(null, salida1 + "\n ========== \n" + salida2,
+		// "Dos ecosistemas", 1);
+
+		System.out.println("Ecosistema antes: " + salida1);
+		System.out.println("\n -------------------------------------------- \n");
+		System.out.println("Ecosistema despues: " + salida2);
 
 	}
 
