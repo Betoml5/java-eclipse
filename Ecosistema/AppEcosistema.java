@@ -33,7 +33,7 @@ public class AppEcosistema {
 			if (ecosistema[i] == null) {
 				salida1 += "\nNull";
 			} else {
-				salida1 += "\nAnimal: " + ecosistema[i].getTipoAnimal();
+				salida1 += "\nAnimal: " + ecosistema[i].getTipoAnimal() + " " + i;
 			}
 		}
 
@@ -58,6 +58,8 @@ public class AppEcosistema {
 
 						while (ecosistema[randomPosition] != null) {
 							randomPosition = rObj.nextInt(ecosistema.length - 1);
+							System.out.println("Saliendo del while");
+
 						}
 
 						System.out.println("Encontramos una posicion libre para oso, posicion: " + randomPosition);
@@ -69,6 +71,7 @@ public class AppEcosistema {
 
 						while (ecosistema[randomPosition] != null) {
 							randomPosition = rObj.nextInt(ecosistema.length - 1);
+							System.out.println("Saliendo del while");
 						}
 
 						System.out.println("Encontramos una posicion libre para pez, posicion: " + randomPosition);
@@ -88,7 +91,7 @@ public class AppEcosistema {
 			if (ecosistema[i] == null) {
 				salida2 += "\nNull";
 			} else {
-				salida2 += "\nAnimal: " + ecosistema[i].getTipoAnimal();
+				salida2 += "\nAnimal: " + ecosistema[i].getTipoAnimal() + " " + i;
 			}
 		}
 
